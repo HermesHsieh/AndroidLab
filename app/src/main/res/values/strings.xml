@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LabApp</string>
+    <string name="main_btn_bottom_navigation">Bottom Navigation</string>
 </resources>
