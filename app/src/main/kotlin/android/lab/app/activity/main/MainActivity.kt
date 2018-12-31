@@ -1,5 +1,6 @@
-package android.lab.app
+package android.lab.app.activity.main
 
+import android.lab.app.R
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 
