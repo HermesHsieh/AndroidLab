@@ -5,6 +5,7 @@ import android.lab.app.ui.viewpagertransformer.FadeInPageTransformer
 import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
+import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
 
 class BottomNavigationActivity : AppCompatActivity() {
@@ -16,6 +17,11 @@ class BottomNavigationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_navigation)
+
+        supportActionBar?.let { bar ->
+            bar.setDisplayHomeAsUpEnabled(true)
+            bar.setHomeButtonEnabled(true)
+        }
 
         pagerAdapter = BottomNavigationPagerAdapter(supportFragmentManager)
         swipeable_view_pager.adapter = pagerAdapter
@@ -68,5 +74,15 @@ class BottomNavigationActivity : AppCompatActivity() {
                 selectedViewPagerPosition = position
             }
         })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
