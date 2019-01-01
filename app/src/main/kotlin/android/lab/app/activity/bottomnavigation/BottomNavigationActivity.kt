@@ -1,6 +1,7 @@
 package android.lab.app.activity.bottomnavigation
 
 import android.lab.app.R
+import android.lab.app.ui.viewpagertransformer.FadeInPageTransformer
 import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
@@ -19,6 +20,7 @@ class BottomNavigationActivity : AppCompatActivity() {
         pagerAdapter = BottomNavigationPagerAdapter(supportFragmentManager)
         swipeable_view_pager.adapter = pagerAdapter
 
+        swipeable_view_pager.setPageTransformer(true, FadeInPageTransformer())
 //        swipeable_view_pager.setPageTransformer(true, FadePageTransformer())
 //        swipeable_view_pager.setPageTransformer(true, DepthPageTransformer())
 //        swipeable_view_pager.setPageTransformer(true, ZoomOutPageTransformer())

@@ -23,6 +23,7 @@ class BottomNavigationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        println("onViewCreated: $view, title: ${args.title}")
         textView.text = args.title
         activity?.let {
             fragment_layout.backgroundColor = ContextCompat.getColor(it, args.bgColorRes)
