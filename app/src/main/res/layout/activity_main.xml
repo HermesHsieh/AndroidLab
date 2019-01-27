@@ -22,5 +22,13 @@
             android:textAllCaps="false"
             />
 
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            tools:text="aewfgewagf"
+            />
+
     </android.support.v7.widget.LinearLayoutCompat>
 </ScrollView>
