@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.bottomnavigation.BottomNavigationActivity"/>
+        <activity android:name=".activity.number.NumberActivity"/>
     </application>
 
 </manifest>

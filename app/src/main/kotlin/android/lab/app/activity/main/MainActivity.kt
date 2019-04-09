@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.lab.app.R
 import android.lab.app.activity.bottomnavigation.BottomNavigationActivity
+import android.lab.app.activity.number.NumberActivity
 import android.lab.app.receiver.LocaleChangedReceiver
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -19,8 +20,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btn_bottom_navigation.setOnClickListener {
+        btn_bottom_navigation?.setOnClickListener {
             startActivity<BottomNavigationActivity>()
+        }
+        btn_number?.setOnClickListener {
+            startActivity<NumberActivity>()
         }
         println("*---Default---*")
         printLocale(Locale.getDefault())

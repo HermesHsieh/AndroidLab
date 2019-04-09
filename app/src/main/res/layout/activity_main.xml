@@ -22,6 +22,15 @@
             android:textAllCaps="false"
             />
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_padding"
+            android:text="@string/main_btn_number"
+            android:textAllCaps="false"
+            />
+
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/info"
             android:layout_width="match_parent"
