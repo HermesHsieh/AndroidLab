@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".activity.bottomnavigation.BottomNavigationActivity"/>
         <activity android:name=".activity.number.NumberActivity"/>
+        <activity android:name=".activity.segmented.SegmentedActivity"/>
     </application>
 
 </manifest>

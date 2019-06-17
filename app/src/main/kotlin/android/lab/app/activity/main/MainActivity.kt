@@ -6,6 +6,7 @@ import android.content.IntentFilter
 import android.lab.app.R
 import android.lab.app.activity.bottomnavigation.BottomNavigationActivity
 import android.lab.app.activity.number.NumberActivity
+import android.lab.app.activity.segmented.SegmentedActivity
 import android.lab.app.receiver.LocaleChangedReceiver
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_number?.setOnClickListener {
             startActivity<NumberActivity>()
+        }
+        btn_segmented?.setOnClickListener {
+            startActivity<SegmentedActivity>()
         }
         println("*---Default---*")
         printLocale(Locale.getDefault())

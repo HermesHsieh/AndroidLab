@@ -2,6 +2,7 @@
     <string name="app_name">LabApp</string>
     <string name="main_btn_bottom_navigation">Bottom Navigation</string>
     <string name="main_btn_number">Number</string>
+    <string name="main_btn_segmented">Segmented</string>
 
     <string name="navigation_main">Home</string>
     <string name="navigation_find">Find</string>
