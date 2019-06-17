@@ -9,4 +9,10 @@
     <string name="navigation_favorite">Favorite</string>
     <string name="navigation_music">Music</string>
     <string name="navigation_news">News</string>
+
+    <string-array name="segmented_array">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
 </resources>

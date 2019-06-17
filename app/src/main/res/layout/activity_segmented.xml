@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.v7.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segmented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="1.5dp"
+        segmentedgroup:sc_corner_radius="6dp"
+        segmentedgroup:sc_tint_color="@color/colorAccent">
+
+        <RadioButton
+            android:id="@+id/button21"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="One"/>
+
+        <RadioButton
+            android:id="@+id/button22"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two"/>
+
+        <RadioButton
+            android:id="@+id/button23"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Three"/>
+    </info.hoang8f.android.segmented.SegmentedGroup>
+</android.support.v7.widget.LinearLayoutCompat>
