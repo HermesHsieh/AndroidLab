@@ -3,9 +3,9 @@ package android.lab.app.activity.bottomnavigation
 import android.lab.app.R
 import android.lab.app.kotlin.Arguments
 import android.lab.app.kotlin.withValues
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 
 class BottomNavigationPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 

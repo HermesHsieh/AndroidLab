@@ -1,7 +1,7 @@
 package android.lab.app.ui.viewpagertransformer
 
-import android.support.v4.view.ViewPager
 import android.view.View
+import androidx.viewpager.widget.ViewPager
 
 class FadePageTransformer : ViewPager.PageTransformer {
 

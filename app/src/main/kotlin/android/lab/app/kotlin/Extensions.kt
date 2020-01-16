@@ -2,8 +2,8 @@ package android.lab.app.kotlin
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import kotlin.properties.ReadWriteProperty
 
 object DelegatesExt {
@@ -29,5 +29,5 @@ fun <T : Any> FragmentActivity.getValue(key: String, default: T) = lazy {
  * Retrieve property with default value from intent
  */
 fun <T : Any> Fragment.getValue(key: String, default: T) = lazy {
-    arguments?.get(key)  as? T ?: default
+    arguments?.get(key) as? T ?: default
 }

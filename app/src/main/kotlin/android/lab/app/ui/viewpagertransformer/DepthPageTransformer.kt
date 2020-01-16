@@ -1,7 +1,7 @@
 package android.lab.app.ui.viewpagertransformer
 
-import android.support.v4.view.ViewPager
 import android.view.View
+import androidx.viewpager.widget.ViewPager
 
 private const val MIN_SCALE = 0.75f
 

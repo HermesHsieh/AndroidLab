@@ -2,9 +2,9 @@ package android.lab.app.activity.number
 
 import android.animation.ValueAnimator
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import org.jetbrains.anko.find
 import org.jetbrains.anko.setContentView
 

@@ -1,9 +1,9 @@
 package android.lab.app.ui.viewpagertransformer
 
-import android.support.v4.view.ViewPager
 import android.view.View
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
+import androidx.viewpager.widget.ViewPager
 
 class FadeInPageTransformer : ViewPager.PageTransformer {
     override fun transformPage(view: View, position: Float) {

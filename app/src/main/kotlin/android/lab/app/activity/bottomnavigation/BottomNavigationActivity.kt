@@ -3,9 +3,9 @@ package android.lab.app.activity.bottomnavigation
 import android.lab.app.R
 import android.lab.app.ui.viewpagertransformer.FadeInPageTransformer
 import android.os.Bundle
-import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
 
 class BottomNavigationActivity : AppCompatActivity() {
