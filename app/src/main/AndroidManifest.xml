@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="android.lab.app">
+    package="android.lab.app">
 
     <application
         android:allowBackup="true"
@@ -11,21 +11,22 @@
         android:theme="@style/AppTheme">
         <receiver android:name=".receiver.LocaleChangedReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
             </intent-filter>
         </receiver>
 
         <activity android:name=".activity.main.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.bottomnavigation.BottomNavigationActivity"/>
-        <activity android:name=".activity.number.NumberActivity"/>
-        <activity android:name=".activity.segmented.SegmentedActivity"/>
+        <activity android:name=".activity.bottomnavigation.BottomNavigationActivity" />
+        <activity android:name=".activity.number.NumberActivity" />
+        <activity android:name=".activity.segmented.SegmentedActivity" />
+        <activity android:name=".activity.viewpager2.ViewPager2Activity" />
     </application>
 
 </manifest>

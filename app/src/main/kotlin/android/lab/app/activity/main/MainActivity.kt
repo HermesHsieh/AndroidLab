@@ -7,6 +7,7 @@ import android.lab.app.R
 import android.lab.app.activity.bottomnavigation.BottomNavigationActivity
 import android.lab.app.activity.number.NumberActivity
 import android.lab.app.activity.segmented.SegmentedActivity
+import android.lab.app.activity.viewpager2.ViewPager2Activity
 import android.lab.app.receiver.LocaleChangedReceiver
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_segmented?.setOnClickListener {
             startActivity<SegmentedActivity>()
+        }
+        btn_viewpager2?.setOnClickListener {
+            startActivity<ViewPager2Activity>()
         }
         println("*---Default---*")
         printLocale(Locale.getDefault())
